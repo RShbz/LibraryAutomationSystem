@@ -1,6 +1,6 @@
 package library;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.Date;
 
@@ -13,16 +13,15 @@ public class CatalogTest {
 	@Test
 	void test() {
 		
-		var date1 = new Date();
-		date1.setDate(1978);
+		
 		var inceMemed = new Catalog.Builder()
 				.bookId(0)
-				//.cover(null)
+				.cover(null)
 				.isbn("TR01")
 				.title("Ýnce Memed")
 				.author("Yaþar", "Kemal")
 				.numberOfPages(438)
-				.publishDate(date1)
+				.publishDate(new Date(1978))
 				.publishingHouse("Varlýk Yayýnlarý")
 				.language("TURKISH")
 				.type("NOVEL")
@@ -33,13 +32,13 @@ public class CatalogTest {
 				.build();
 		
 		assertEquals(0, inceMemed.getBookId());
-		//assertEquals(null, inceMemed.getCover());
+		assertEquals(null, inceMemed.getCover());
 		assertEquals("TR01", inceMemed.getIsbn());
 		assertEquals("Ýnce Memed", inceMemed.getTitle());
 		assertEquals("Yaþar",inceMemed.getAuthor().getFirstName());
 		assertEquals("Kemal",inceMemed.getAuthor().getLastName());
 		assertEquals(438,inceMemed.getNumberOfPages());
-		assertEquals(date1,inceMemed.getPublishDate());
+		assertEquals(1978,inceMemed.getPublishDate());
 		assertEquals("Varlýk Yayýnlarý",inceMemed.getPublishingHouse());
 		assertEquals("TURKISH",inceMemed.getLanguage());
 		assertEquals("NOVEL",inceMemed.getType());
@@ -47,10 +46,7 @@ public class CatalogTest {
 		assertEquals("OTHER",inceMemed.getUseTarget());
 		assertEquals("UNLIMITED",inceMemed.getPeriodical());
 		assertEquals("AVAILABLE",inceMemed.getAvailable());
-		
-		
-				
-				
+					
 
 	}
 	

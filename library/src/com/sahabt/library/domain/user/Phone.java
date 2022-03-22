@@ -13,7 +13,7 @@ public class Phone {
 	private static Map<String,Phone> phoneList = new ConcurrentHashMap<>();
 
 	public static Phone of (String phoneNumber,PhoneType phoneType) {
-		var new
+		
 		return new Phone (phoneNumber,phoneType);
 	}
 	public Phone(String phoneNumber, PhoneType phoneType) {

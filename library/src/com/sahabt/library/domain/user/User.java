@@ -1,10 +1,8 @@
 package com.sahabt.library.domain.user;
 
-import com.sahabt.library.domain.annotations.Aggregate;
+import java.util.Date;
 
-import libary.domain.BirthDate;
-import libary.domain.IdentityNo;
-import libary.domain.uservalue.Photo;
+import com.sahabt.library.domain.annotations.Aggregate;
 @Aggregate(id="identityNo")
 public class User {
 	private IdentityNo identityNo;
@@ -14,6 +12,41 @@ public class User {
 	private Status     status;  // Status include main role as teacher, student
 	private Contact    contact; 
 
+	public static class Builder{
+		private IdentityNo identityNo;
+		private FullName   fullName;
+		private BirthDate  birthDate;
+		private Photo      photo;
+		private Status     status;  // Status include main role as teacher, student
+		private Contact    contact;
+		
+		public Builder identityNo(String identityNo) {
+			this.identityNo=IdentityNo.of(identityNo);
+			return this;
+		}
+		
+		public Builder fullName(String firstName,String lastName) {
+			this.fullName = FullName.of(firstName,lastName);
+			return this;
+		}
+		public Builder birthDate(Date birthDate) {
+			this.birthDate = BirthDate.of(birthDate);
+			return this;
+		}
+		public Builder photo(byte[] value) {
+			this.photo = Photo.of(value);
+			return this;
+		}
+		public Builder status(String value) {
+			this.status = Status.valueOf(value);
+			return this;
+		}
+		public Builder contact(Email  email,Phone  phone,Address address) {
+			this.contact = Contact;
+			return this;
+		}
+		
+	}
 			
 
 }

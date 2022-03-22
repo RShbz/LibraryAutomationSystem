@@ -23,20 +23,20 @@ public class Catalog {
 
 	
 	public Catalog(Builder builder) {
-		this.bookId = bookId;
-		this.cover = cover;
-		this.isbn = isbn;
-		this.title = title;
-		this.author = author;
-		this.numberOfPages = numberOfPages;
-		this.publishDate = publishDate;
-		this.publishingHouse = publishingHouse;
-		this.language = language;
-		this.type = type;
-		this.topic = topic;
-		this.useTarget = useTarget;
-		this.periodical = periodical;
-		this.available = available;
+		this.bookId =builder.bookId;
+		this.cover = builder.cover;
+		this.isbn = builder.isbn;
+		this.title = builder.title;
+		this.author = builder.author;
+		this.numberOfPages = builder.numberOfPages;
+		this.publishDate = builder.publishDate;
+		this.publishingHouse = builder.publishingHouse;
+		this.language = builder.language;
+		this.type = builder.type;
+		this.topic = builder.topic;
+		this.useTarget = builder.useTarget;
+		this.periodical = builder.periodical;
+		this.available = builder.available;
 	}
 
 
@@ -159,14 +159,16 @@ public class Catalog {
 		private UseTarget useTarget;
 		private Periodical periodical;
 		private Available available;
+		
+		
 
 		public Builder bookId(int value) {
 			this.bookId = BookId.of(value);
 			return this;
 		}
 
-		public Builder cover(byte[] value) {
-			this.cover = Cover.of(value);
+		public Builder cover(byte[] cover) {
+			this.cover = Cover.of(cover);
 			return this;
 		}
 

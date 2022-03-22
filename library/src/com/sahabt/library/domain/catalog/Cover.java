@@ -13,15 +13,12 @@ public final class Cover {
 		return new Cover(Base64.getDecoder().decode(base64Value));
 	}
 
-	public static Cover of(byte[] Cover) {
-		Objects.requireNonNull(Cover);
-		if (Cover.length == 0)
-			throw new IllegalArgumentException("Cover must have at least one byte.");
-		return new Cover(Cover);
+	public static Cover of(byte[] cover) {
+		return new Cover(cover);
 	}
 
-	private Cover(byte[] Cover) {
-		this.cover = Cover;
+	private Cover(byte[] cover) {
+		this.cover = cover;
 	}
 	
 	public byte[] getCover() {
