@@ -1,0 +1,49 @@
+package com.sahabt.library.domain.catalog;
+
+import java.util.Date;
+import java.util.Objects;
+
+import com.sahabt.library.domain.annotations.ValueObject;
+
+@ValueObject
+public final class PublishDate {
+
+	private Date publishDate;
+
+	public static PublishDate of (Date publishDate) {
+		return new PublishDate(publishDate);
+	}
+	private PublishDate(Date publishDate) {
+		super();
+		this.publishDate = publishDate;
+	}
+
+	public Date getPublishDate() {
+		return publishDate;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(publishDate);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		PublishDate other = (PublishDate) obj;
+		return Objects.equals(publishDate, other.publishDate);
+	}
+
+	@Override
+	public String toString() {
+		return "PublishDate [publishDate=" + publishDate + "]";
+	}
+	
+	
+	
+}

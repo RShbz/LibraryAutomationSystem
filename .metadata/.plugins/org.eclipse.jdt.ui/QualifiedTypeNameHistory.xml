@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="java.util.Base64"/>
     <fullyQualifiedTypeName name="libary.domain.annotations.ValueObject"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.annotations.Aggregate"/>
-    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Email"/>
-    <fullyQualifiedTypeName name="java.util.Objects"/>
     <fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Base64"/>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.ISBN"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.IdentityNo"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.Catalog.Builder"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.Catalog"/>
+    <fullyQualifiedTypeName name="lorem.annot.ValueObject"/>
+    <fullyQualifiedTypeName name="lorem.annot.Aggregate"/>
+    <fullyQualifiedTypeName name="lorem.domain.Lorem.Builder"/>
+    <fullyQualifiedTypeName name="lorem.domain.Lorem"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.annotations.ValueObject"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Contact"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.User"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Email"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Phone"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.PhoneType"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Address"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.AddressType"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.credicard.CrediCard.Builder"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.credicard.CrediCard"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.credicard.ExpirationDate"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.User.Builder"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.borrow.Borrow"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.borrow.Borrow.Builder"/>
 </qualifiedTypeNameHistroy>
