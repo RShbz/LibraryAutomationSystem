@@ -1,6 +1,5 @@
 package com.sahabt.library.domain.credicard;
 
-import java.util.Date;
 import java.util.Objects;
 
 import com.sahabt.library.domain.annotations.ValueObject;
@@ -8,23 +7,30 @@ import com.sahabt.library.domain.annotations.ValueObject;
 @ValueObject
 public final class ExpirationDate {
 	
-	private Date expirationDate;
+	private int mount;
+	private int year;
 
-	public static ExpirationDate of (Date expirationDate) {
-		return new ExpirationDate(expirationDate);
+	public static ExpirationDate of (int mount,int year) {
+		return new ExpirationDate(mount,year);
 	}
-	private ExpirationDate(Date expirationDate) {
+
+	private ExpirationDate(int mount, int year) {
 		super();
-		this.expirationDate = expirationDate;
+		this.mount = mount;
+		this.year = year;
 	}
 
-	public Date getExpirationDate() {
-		return expirationDate;
+	public int getMount() {
+		return mount;
+	}
+
+	public int getYear() {
+		return year;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(expirationDate);
+		return Objects.hash(mount, year);
 	}
 
 	@Override
@@ -36,13 +42,17 @@ public final class ExpirationDate {
 		if (getClass() != obj.getClass())
 			return false;
 		ExpirationDate other = (ExpirationDate) obj;
-		return Objects.equals(expirationDate, other.expirationDate);
+		return mount == other.mount && year == other.year;
 	}
 
 	@Override
 	public String toString() {
-		return "ExpirationDate [expirationDate=" + expirationDate + "]";
+		return "ExpirationDate [mount=" + mount + ", year=" + year + "]";
 	}
+
+	
+
+	
 	
 	
 }

@@ -1,6 +1,5 @@
 package com.sahabt.library.domain.catalog;
 
-import java.util.Date;
 import java.util.Objects;
 
 import com.sahabt.library.domain.annotations.ValueObject;
@@ -8,24 +7,44 @@ import com.sahabt.library.domain.annotations.ValueObject;
 @ValueObject
 public final class PublishDate {
 
-	private Date publishDate;
+	private int day;
+	private int mounth;
+	private int year;
+	
 
-	public static PublishDate of (Date publishDate) {
-		return new PublishDate(publishDate);
+	public static PublishDate of (int day,int mounth,int year) {
+		return new PublishDate(day,mounth,year);
 	}
-	private PublishDate(Date publishDate) {
+
+
+	private PublishDate(int day, int mounth, int year) {
 		super();
-		this.publishDate = publishDate;
+		this.day = day;
+		this.mounth = mounth;
+		this.year = year;
 	}
 
-	public Date getPublishDate() {
-		return publishDate;
+
+	public int getDay() {
+		return day;
 	}
+
+
+	public int getMounth() {
+		return mounth;
+	}
+
+
+	public int getYear() {
+		return year;
+	}
+
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(publishDate);
+		return Objects.hash(day, mounth, year);
 	}
+
 
 	@Override
 	public boolean equals(Object obj) {
@@ -36,13 +55,16 @@ public final class PublishDate {
 		if (getClass() != obj.getClass())
 			return false;
 		PublishDate other = (PublishDate) obj;
-		return Objects.equals(publishDate, other.publishDate);
+		return day == other.day && mounth == other.mounth && year == other.year;
 	}
+
 
 	@Override
 	public String toString() {
-		return "PublishDate [publishDate=" + publishDate + "]";
+		return "PublishDate [day=" + day + ", mounth=" + mounth + ", year=" + year + "]";
 	}
+
+	
 	
 	
 	

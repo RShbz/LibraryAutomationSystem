@@ -14,9 +14,6 @@ public final class Photo {
 	}
 
 	public static Photo of(byte[] value) {
-		Objects.requireNonNull(value);
-		if (value.length == 0)
-			throw new IllegalArgumentException("value must have at least one byte.");
 		return new Photo(value);
 	}
 

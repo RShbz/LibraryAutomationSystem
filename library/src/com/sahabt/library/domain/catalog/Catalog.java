@@ -72,13 +72,27 @@ public class Catalog {
 		this.numberOfPages = numberOfPages;
 	}
 
+
+
 	public PublishDate getPublishDate() {
 		return publishDate;
 	}
 
+
 	public void setPublishDate(PublishDate publishDate) {
 		this.publishDate = publishDate;
 	}
+
+
+	public void setBookId(BookId bookId) {
+		this.bookId = bookId;
+	}
+
+
+	public void setIsbn(ISBN isbn) {
+		this.isbn = isbn;
+	}
+
 
 	public PublishingHouse getPublishingHouse() {
 		return publishingHouse;
@@ -192,8 +206,10 @@ public class Catalog {
 			return this;
 		}
 
-		public Builder publishDate(Date value) {
-			this.publishDate = PublishDate.of(value);
+		public Builder publishDate(int day,
+								   int mounth,
+								   int year) {
+			this.publishDate = PublishDate.of(day,mounth,year);
 			return this;
 		}
 

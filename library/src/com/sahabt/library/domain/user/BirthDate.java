@@ -7,26 +7,42 @@ import com.sahabt.library.domain.annotations.ValueObject;
 
 @ValueObject
 public final class BirthDate {
-	private Date birthDate;
+	private int day;
+	private int mount;
+	private int year;
 
-	public static BirthDate of(Date birthDate) {
-		return new BirthDate(birthDate);
+	public static BirthDate of(int day, int mount, int year) {
+		return new BirthDate(day,mount,year);
 
 	}
+	
 
-	private BirthDate(Date birthDate) {
+	private BirthDate(int day, int mount, int year) {
 		super();
-		this.birthDate = birthDate;
+		this.day = day;
+		this.mount = mount;
+		this.year = year;
 	}
 
-	public Date getBirthDate() {
-		return birthDate;
+
+	public int getDay() {
+		return day;
 	}
+
+	public int getMount() {
+		return mount;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(birthDate);
+		return Objects.hash(day, mount, year);
 	}
+
 
 	@Override
 	public boolean equals(Object obj) {
@@ -37,12 +53,14 @@ public final class BirthDate {
 		if (getClass() != obj.getClass())
 			return false;
 		BirthDate other = (BirthDate) obj;
-		return Objects.equals(birthDate, other.birthDate);
+		return day == other.day && mount == other.mount && year == other.year;
 	}
+
 
 	@Override
 	public String toString() {
-		return "BirthDate [birthDate=" + birthDate + "]";
+		return "BirthDate [day=" + day + ", mount=" + mount + ", year=" + year + "]";
 	}
+
 
 }

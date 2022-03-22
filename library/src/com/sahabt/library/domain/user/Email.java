@@ -19,7 +19,7 @@ public class Email {
 		return emailList.put(email,newEmail);
 	}
 
-	public Email(String email, EmailType emailType) {
+	private Email(String email, EmailType emailType) {
 		super();
 		this.email = email;
 		this.emailType = emailType;

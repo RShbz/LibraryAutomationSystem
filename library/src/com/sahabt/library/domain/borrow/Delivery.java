@@ -8,23 +8,36 @@ import com.sahabt.library.domain.annotations.ValueObject;
 @ValueObject
 public final class Delivery {
 
-	private Date deliveryDate;
+	private int day;
+	private int mount;
+	private int year;
 
-	public static Delivery of(Date deliveryDate) {
-		return new Delivery(deliveryDate);
+	public static Delivery of(int day,int mount,int year) {
+		return new Delivery(day,mount,year);
 	}
-	private Delivery(Date deliveryDate) {
+
+	private Delivery(int day, int mount, int year) {
 		super();
-		this.deliveryDate = deliveryDate;
+		this.day = day;
+		this.mount = mount;
+		this.year = year;
 	}
 
-	public Date getDeliveryDate() {
-		return deliveryDate;
+	public int getDay() {
+		return day;
+	}
+
+	public int getMount() {
+		return mount;
+	}
+
+	public int getYear() {
+		return year;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(deliveryDate);
+		return Objects.hash(day, mount, year);
 	}
 
 	@Override
@@ -36,13 +49,14 @@ public final class Delivery {
 		if (getClass() != obj.getClass())
 			return false;
 		Delivery other = (Delivery) obj;
-		return Objects.equals(deliveryDate, other.deliveryDate);
+		return day == other.day && mount == other.mount && year == other.year;
 	}
 
 	@Override
 	public String toString() {
-		return "Delivery [deliveryDate=" + deliveryDate + "]";
+		return "Delivery [day=" + day + ", mount=" + mount + ", year=" + year + "]";
 	}
+
 	
 	
 }

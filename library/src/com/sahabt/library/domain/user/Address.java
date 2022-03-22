@@ -10,16 +10,16 @@ public  final class Address {
 	private String city;
 	private String district;
 	private String neighbourdhood;
-	private int buldingNumber ;
-	private int apartmentNumber;
+	private String buldingNumber ;
+	private String apartmentNumber;
 	private AddressType addressType;
 	
 	public static Address of(String country,
 			                String city,
 							String district,
 	                        String neighbourdhood,
-							int buldingNumber,
-							int apartmentNumber,
+							String buldingNumber,
+							String apartmentNumber,
 							AddressType addressType) {
 		return new Address(country,
 						   city,
@@ -29,8 +29,9 @@ public  final class Address {
 						   apartmentNumber,
 						   addressType);
 	}
-	private Address(String country, String city, String district, String neighbourdhood, int buldingNumber,
-			int apartmentNumber, AddressType addressType) {
+
+	private Address(String country, String city, String district, String neighbourdhood, String buldingNumber,
+			String apartmentNumber, AddressType addressType) {
 		super();
 		this.country = country;
 		this.city = city;
@@ -40,31 +41,40 @@ public  final class Address {
 		this.apartmentNumber = apartmentNumber;
 		this.addressType = addressType;
 	}
+
 	public String getCountry() {
 		return country;
 	}
+
 	public String getCity() {
 		return city;
 	}
+
 	public String getDistrict() {
 		return district;
 	}
+
 	public String getNeighbourdhood() {
 		return neighbourdhood;
 	}
-	public int getBuldingNumber() {
+
+	public String getBuldingNumber() {
 		return buldingNumber;
 	}
-	public int getApartmentNumber() {
+
+	public String getApartmentNumber() {
 		return apartmentNumber;
 	}
+
 	public AddressType getAddressType() {
 		return addressType;
 	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(addressType, apartmentNumber, buldingNumber, city, country, district, neighbourdhood);
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -74,11 +84,12 @@ public  final class Address {
 		if (getClass() != obj.getClass())
 			return false;
 		Address other = (Address) obj;
-		return addressType == other.addressType && apartmentNumber == other.apartmentNumber
-				&& buldingNumber == other.buldingNumber && Objects.equals(city, other.city)
+		return addressType == other.addressType && Objects.equals(apartmentNumber, other.apartmentNumber)
+				&& Objects.equals(buldingNumber, other.buldingNumber) && Objects.equals(city, other.city)
 				&& Objects.equals(country, other.country) && Objects.equals(district, other.district)
 				&& Objects.equals(neighbourdhood, other.neighbourdhood);
 	}
+
 	@Override
 	public String toString() {
 		return "Address [country=" + country + ", city=" + city + ", district=" + district + ", neighbourdhood="
