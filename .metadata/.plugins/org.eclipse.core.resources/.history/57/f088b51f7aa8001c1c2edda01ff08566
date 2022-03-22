@@ -1,0 +1,133 @@
+package libary.domain.uservalue;
+
+import java.util.Objects;
+
+import libary.domain.annotations.ValueObject;
+
+@ValueObject
+public class Address {
+
+	private String country;
+	private String city;
+	private String neighborhood;
+	private int buldingNo;
+	private int apartmentNumber;
+	private AddressType addressType;
+
+	public static Address of(   String country,
+								String city,
+								String neighborhood,
+								int buldingNo,
+								int apartmentNumber,
+								AddressType  addressType) {
+		Objects.requireNonNull(country);
+		Objects.requireNonNull(city);
+		Objects.requireNonNull(neighborhood);
+		Objects.requireNonNull(buldingNo);
+		Objects.requireNonNull(apartmentNumber);
+		Objects.requireNonNull(addressType);
+		
+		if (!country.matches("^[a-z]{1,}$"))
+			throw new IllegalArgumentException("Country name must have at least 1 alphabet chars.");
+		if (!city.matches("^[a-z]{1,}$"))
+			throw new IllegalArgumentException("City name must have at least 1 alphabet chars.");
+		if (!neighborhood.matches("^[a-z]{1,}$"))
+			throw new IllegalArgumentException("Neighborhood  name must have at least 1 alphabet chars.");
+		if (isPositiveNumberValid(buldingNo)== false)
+			throw new IllegalArgumentException("Building no must have minimum 1.");
+		if ((isPositiveNumberValid(apartmentNumber))== false)
+			throw new IllegalArgumentException("Apartment  number must have minimum 1.");
+		return new Address(country,city,neighborhood,buldingNo,apartmentNumber,addressType);
+	}
+
+	private static boolean isPositiveNumberValid( int buldingNo, int apartmentNumber ) {
+		if (buldingNo <= 0)
+			return false;
+		if (apartmentNumber <= 0)
+			return false;
+	}
+	public Address(String country, String city, String neighborhood, int buldingNo, int apartmentNumber,
+			AddressType addressType) {
+		super();
+		this.country = country;
+		this.city = city;
+		this.neighborhood = neighborhood;
+		this.buldingNo = buldingNo;
+		this.apartmentNumber = apartmentNumber;
+		this.addressType = addressType;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getNeighborhood() {
+		return neighborhood;
+	}
+
+	public void setNeighborhood(String neighborhood) {
+		this.neighborhood = neighborhood;
+	}
+
+	public int getBuldingNo() {
+		return buldingNo;
+	}
+
+	public void setBuldingNo(int buldingNo) {
+		this.buldingNo = buldingNo;
+	}
+
+	public int getApartmentNumber() {
+		return apartmentNumber;
+	}
+
+	public void setApartmentNumber(int apartmentNumber) {
+		this.apartmentNumber = apartmentNumber;
+	}
+
+	public AddressType getAddressType() {
+		return addressType;
+	}
+
+	public void setAddressType(AddressType addressType) {
+		this.addressType = addressType;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(apartmentNumber, buldingNo, city, country, neighborhood);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Address other = (Address) obj;
+		return apartmentNumber == other.apartmentNumber && buldingNo == other.buldingNo
+				&& Objects.equals(city, other.city) && Objects.equals(country, other.country)
+				&& Objects.equals(neighborhood, other.neighborhood);
+	}
+
+	@Override
+	public String toString() {
+		return "Address [country=" + country + ", city=" + city + ", neighborhood=" + neighborhood + ", buldingNo="
+				+ buldingNo + ", apartmentNumber=" + apartmentNumber + "]";
+	}
+
+}

@@ -1,0 +1,59 @@
+package library;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Date;
+
+import org.junit.jupiter.api.Test;
+
+import com.sahabt.library.domain.catalog.Catalog;
+
+public class CatalogTest {
+
+	@Test
+	void test() {
+		
+		var date1 = new Date();
+		date1.setDate(1978);
+		var inceMemed = new Catalog.Builder()
+				.bookId(0)
+				.cover(null)
+				.isbn("TR01")
+				.title("Ýnce Memed")
+				.author("Yaþar", "Kemal")
+				.numberOfPages(438)
+				.publishDate(date1)
+				.publishingHouse("Varlýk Yayýnlarý")
+				.language("TURKISH")
+				.type("NOVEL")
+				.topic("HISTORY")
+				.useTarget("OTHER")
+				.periodical("UNLIMITED")
+				.available("AVAILABLE")
+				.build();
+		
+		assertEquals(0, inceMemed.getBookId());
+		//assertEquals(null, inceMemed.getCover());
+		assertEquals("TR01", inceMemed.getIsbn());
+		assertEquals("Ýnce Memed", inceMemed.getTitle());
+		assertEquals("Yaþar",inceMemed.getAuthor().getFirstName());
+		assertEquals("Kemal",inceMemed.getAuthor().getLastName());
+		assertEquals(438,inceMemed.getNumberOfPages());
+		assertEquals(date1,inceMemed.getPublishDate());
+		assertEquals("Varlýk Yayýnlarý",inceMemed.getPublishingHouse());
+		assertEquals("TURKISH",inceMemed.getLanguage());
+		assertEquals("NOVEL",inceMemed.getType());
+		assertEquals("HISTORY",inceMemed.getTopic());
+		assertEquals("OTHER",inceMemed.getUseTarget());
+		assertEquals("UNLIMITED",inceMemed.getPeriodical());
+		assertEquals("AVAILABLE",inceMemed.getAvailable());
+		
+		
+				
+				
+
+	}
+	
+	
+
+}

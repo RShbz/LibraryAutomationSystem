@@ -1,0 +1,9 @@
+package libary.domain;
+
+import java.util.Date;
+
+public class BirthDate {
+	private Date birthDate;
+	
+	
+}

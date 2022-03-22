@@ -1,0 +1,52 @@
+package com.sahabt.library.domain.user;
+
+import java.util.Date;
+import java.util.Objects;
+
+import com.sahabt.library.domain.annotations.ValueObject;
+
+@ValueObject
+public final class BirthDate {
+	private Date birthDate;
+
+	public static BirthDate of(Date birthDate) {
+		return new BirthDate(birthDate);
+		
+	}
+	private BirthDate(Date birthDate) {
+		super();
+		this.birthDate = birthDate;
+	}
+
+	public Date getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(birthDate);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		BirthDate other = (BirthDate) obj;
+		return Objects.equals(birthDate, other.birthDate);
+	}
+
+	@Override
+	public String toString() {
+		return "BirthDate [birthDate=" + birthDate + "]";
+	}
+	
+	
+}

@@ -1,0 +1,69 @@
+package libary.domain;
+
+import java.util.Objects;
+
+public class IdentityNo {
+	private int identityNo;
+	
+	
+	// factory method
+	static public IdentityNo valueOf(int value) {
+		// validation
+		Objects.requireNonNull(value);
+		if (!isValid(value))
+			throw new IllegalArgumentException("This is not a valid identity.");
+		// object pooling = caching
+		var cachedIdentity = cache.get(value);
+		if (Objects.isNull(cachedIdentity)) {
+			cachedIdentity = new IdentityNo(value);
+			cache.put(value, cachedIdentity);
+		}
+		return cachedIdentity;
+	}
+	
+	private static boolean isValid(int value) {
+		return true;
+	}
+	
+	public Identity(int identityNo) {
+		super();
+		this.identityNo = identityNo;
+	}
+
+
+	public int getIdentityNo() {
+		return identityNo;
+	}
+
+
+	public void setIdentityNo(int identityNo) {
+		this.identityNo = identityNo;
+	}
+
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(identityNo);
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Identity other = (Identity) obj;
+		return identityNo == other.identityNo;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Identity [identityNo=" + identityNo + "]";
+	}
+	
+	
+}

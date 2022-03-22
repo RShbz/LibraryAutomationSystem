@@ -1,0 +1,18 @@
+package libary.domain;
+
+import libary.domain.uservalue.BirthDate;
+import libary.domain.uservalue.Degree;
+import libary.domain.uservalue.Faculty;
+import libary.domain.uservalue.FullName;
+import libary.domain.uservalue.Status;
+
+public class User {
+	private IdentityNo identityNo;
+	private FullName fullName;
+	private BirthDate birthDate;
+	private Photo photo;
+	private Faculty faculty;
+	private Contact contact;
+	private Status status; // Status include main role as teacher, student
+	private Degree degree; // like prof, dr
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Base64"/>
+    <fullyQualifiedTypeName name="libary.domain.annotations.ValueObject"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.annotations.Aggregate"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Email"/>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.annotations.ValueObject"/>
+</qualifiedTypeNameHistroy>

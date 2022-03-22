@@ -1,0 +1,7 @@
+package libary.domain;
+
+public class Identity {
+	private int identityNo;
+	
+	
+}

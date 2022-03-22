@@ -1,0 +1,15 @@
+package libary.domain;
+
+
+
+
+
+public class User {
+	private Identity identity; 
+	private FullName fullName;
+	private BirthDate birthDate;
+	private Photo photo;
+	private Faculty faculty;//  faculty include faculty name and department
+	private Contact contact;
+	private Status status;// Status include as prof,
+}

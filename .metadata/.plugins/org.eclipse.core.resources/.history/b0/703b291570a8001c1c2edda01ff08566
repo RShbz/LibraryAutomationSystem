@@ -1,0 +1,51 @@
+package libary.domain.uservalue;
+
+import java.text.SimpleDateFormat;
+import java.util.Objects;
+
+public class BirthDate {
+	private SimpleDateFormat birthDate = new SimpleDateFormat("dd/mm/yyyy");
+
+	public static SimpleDateFormat of(SimpleDateFormat birthDate) {
+		
+		return SimpleDateFormat(birthDate);
+	}
+	public BirthDate(SimpleDateFormat birthDate) {
+		super();
+		this.birthDate = birthDate;
+	}
+
+	public SimpleDateFormat getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(SimpleDateFormat birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(birthDate);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		BirthDate other = (BirthDate) obj;
+		return Objects.equals(birthDate, other.birthDate);
+	}
+
+	@Override
+	public String toString() {
+		return "BirthDate [birthDate=" + birthDate + "]";
+	}
+
+
+	
+	
+}

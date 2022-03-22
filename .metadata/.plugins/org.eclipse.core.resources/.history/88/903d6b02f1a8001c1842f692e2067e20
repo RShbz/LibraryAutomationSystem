@@ -1,0 +1,9 @@
+package libary.domain;
+
+import java.util.Date;
+
+public class CreditCard {
+	private double identity;
+	private int creditCardNo;
+	private Date expirationDate;
+}

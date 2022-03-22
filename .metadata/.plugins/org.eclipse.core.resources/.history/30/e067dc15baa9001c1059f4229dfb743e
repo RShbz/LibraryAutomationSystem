@@ -1,0 +1,20 @@
+package com.sahabt.library.domain.catalog;
+
+import com.sahabt.library.domain.annotations.Aggregate;
+
+@Aggregate(id="bookId")
+public class Catalog {
+	private BookId bookId;
+	private Cover cover;
+	private ISBN isbn;
+	private Title title;
+	private Author author;
+	private NumberOfPages numberOfPages;
+	private PublishDate publishDate;
+	private PublishingHouse publishingHouse;
+	private Language language;
+	private Type type; // like novel, poem, article
+	private Topic topic; // like history, sience,
+	private UseTarget useTarget; // lesson or daily
+	private Periodical periodical; // Limited or unlimeted
+}

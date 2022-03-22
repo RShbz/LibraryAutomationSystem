@@ -1,0 +1,5 @@
+package libary.domain.uservalue;
+
+public enum Status {
+
+}

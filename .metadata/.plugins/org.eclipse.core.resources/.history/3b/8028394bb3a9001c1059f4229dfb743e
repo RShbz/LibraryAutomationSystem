@@ -1,0 +1,5 @@
+package com.sahabt.library.domain.booking;
+
+public enum IsBooking {
+
+}
