@@ -1,0 +1,18 @@
+package com.sahabt.library.applications;
+
+import java.util.Optional;
+
+import com.sahabt.kos.domain.book.Book;
+import com.sahabt.kos.domain.book.Isbn;
+import com.sahabt.library.domain.catalog.Catalog;
+import com.sahabt.library.domain.credicard.CreditCard;
+
+public interface CreditCardApplication {
+
+	Optional<CreditCard> hireCreditCard(CreditCard creditCard);
+	Optional<CreditCard> fireCreditCard(CreditCard creditCardNo);
+	Optional<CreditCard> editCreditCard(CreditCard creditCard);
+	Optional<CreditCard> getInformationCreditCard(CreditCard creditCardNo);
+	
+
+}

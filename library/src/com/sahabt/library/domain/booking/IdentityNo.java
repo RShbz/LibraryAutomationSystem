@@ -1,3 +1,4 @@
+
 package com.sahabt.library.domain.booking;
 
 import java.util.Objects;
@@ -10,8 +11,9 @@ public final class IdentityNo {
 
 	public static IdentityNo of(String identityNo) {
 		return new IdentityNo(identityNo);
-		
+
 	}
+
 	private IdentityNo(String identityNo) {
 		super();
 		this.identityNo = identityNo;
@@ -42,6 +44,5 @@ public final class IdentityNo {
 	public String toString() {
 		return "IdentityNo [identityNo=" + identityNo + "]";
 	}
-	
-	
+
 }

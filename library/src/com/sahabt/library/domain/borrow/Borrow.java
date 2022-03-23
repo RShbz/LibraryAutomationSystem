@@ -1,24 +1,22 @@
 package com.sahabt.library.domain.borrow;
 
 import com.sahabt.library.domain.annotations.Aggregate;
-import com.sahabt.library.domain.catalog.ISBN;
 import com.sahabt.library.domain.user.IdentityNo;
-import com.sahabt.library.domain.user.User.Builder;
 
 @Aggregate(id = "")
 public class Borrow {
 
 	private IdentityNo identityNo;
-	private ISBN isbn;
+	private BookId bookId;
 	private Deadline deadline;
 	private Delivery date;
 	private Punishment punishment;
 	private BorrowCounter borrowCounter;
 
-	public Borrow (Builder builder){
+	public Borrow(Builder builder) {
 		this.identityNo = builder.identityNo;
-		this.isbn= builder.isbn;
-		this.deadline=builder.deadline;
+		this.bookId = builder.bookId;
+		this.deadline = builder.deadline;
 		this.date = builder.date;
 		this.punishment = builder.punishment;
 		this.borrowCounter = builder.borrowCounter;
@@ -32,12 +30,13 @@ public class Borrow {
 		this.identityNo = identityNo;
 	}
 
-	public ISBN getIsbn() {
-		return isbn;
+
+	public BookId getBookId() {
+		return bookId;
 	}
 
-	public void setIsbn(ISBN isbn) {
-		this.isbn = isbn;
+	public void setBookId(BookId bookId) {
+		this.bookId = bookId;
 	}
 
 	public Deadline getDeadline() {
@@ -72,51 +71,51 @@ public class Borrow {
 		this.borrowCounter = borrowCounter;
 	}
 
-	public class Builder{
-	private IdentityNo 	  identityNo;
-	private ISBN isbn;
-	private Deadline deadline;
-	private Delivery date;
-	private Punishment punishment;
-	private BorrowCounter borrowCounter;
+	public static class Builder {
+		private IdentityNo identityNo;
+		private BookId bookId;
+		private Deadline deadline;
+		private Delivery date;
+		private Punishment punishment;
+		private BorrowCounter borrowCounter;
 
-	public Builder identityNo(String identityNo) {
-		this.identityNo = IdentityNo.of(identityNo);
-		return this;
-	}
+		public Builder identityNo(String identityNo) {
+			this.identityNo = IdentityNo.of(identityNo);
+			return this;
+		}
 
-	public Builder isbn(String value) {
-		this.isbn = ISBN.of(value);
-		return this;
-	}
+		public Builder bookId(int bookId) {
+			this.bookId = BookId.of(bookId);
+			return this;
+		}
 
-	public Builder deadline(int day, int mount, int year) {
-		this.deadline = Deadline.of(day, mount, year);
-		return this;
-	}
+		public Builder deadline(int day, int mount, int year) {
+			this.deadline = Deadline.of(day, mount, year);
+			return this;
+		}
 
-	public Builder date(int day, int mount, int year) {
-		this.date = Delivery.of(day, mount, year);
-		return this;
-	}
+		public Builder date(int day, int mount, int year) {
+			this.date = Delivery.of(day, mount, year);
+			return this;
+		}
 
-	public Builder punishment(int punishmentAmount) {
-		this.punishment = Punishment.of(punishmentAmount);
-		return this;
-	}
+		public Builder punishment(int punishmentAmount) {
+			this.punishment = Punishment.of(punishmentAmount);
+			return this;
+		}
 
-	public Builder borrowCounter(int borrowCounter) {
-		this.borrowCounter = BorrowCounter.of(borrowCounter);
-		return this;
-	}
+		public Builder borrowCounter(int borrowCounter) {
+			this.borrowCounter = BorrowCounter.of(borrowCounter);
+			return this;
+		}
 
-	public Borrow build() {
-		// validation
-		// business rule
-		// constraint
-		// invariance
-		return new Borrow(this);
+		public Borrow build() {
+			// validation
+			// business rule
+			// constraint
+			// invariance
+			return new Borrow(this);
+		}
 	}
-}
 
 }
