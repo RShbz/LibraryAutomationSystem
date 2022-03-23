@@ -6,8 +6,8 @@ import com.sahabt.library.domain.user.User;
 
 public interface UserApplication {
 
-	Optional<User> hireUser(User user);
-	Optional<User> fireUser(User userId);
+	Optional<User> addUser(User user);
+	Optional<User> removeUser(User userId);
 	Optional<User> editUser(User user);
 	Optional<User> getInformationUser(User userId);
 	

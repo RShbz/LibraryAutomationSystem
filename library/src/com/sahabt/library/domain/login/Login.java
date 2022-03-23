@@ -31,7 +31,7 @@ public class Login {
 
 	@Override
 	public String toString() {
-		return "Login [identityNo=" + identityNo + ", username=" + username + ", password=" + password + "]";
+		return "LoginEvent [identityNo=" + identityNo + ", username=" + username + ", password=" + password + "]";
 	}
 
 	public void setPassword(Password password) {

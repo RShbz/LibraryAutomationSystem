@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginTest" project="library" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="library.LoginTest" time="0.04" displayname="LoginTest" uniqueid="[engine:junit-jupiter]/[class:library.LoginTest]">
-    <testcase name="test" classname="library.LoginTest" time="0.04" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:library.LoginTest]/[method:test()]"/>
-  </testsuite>
-</testrun>

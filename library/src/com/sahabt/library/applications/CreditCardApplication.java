@@ -6,8 +6,8 @@ import com.sahabt.library.domain.creditcard.CreditCard;
 
 public interface CreditCardApplication {
 
-	Optional<CreditCard> hireCreditCard(CreditCard creditCard);
-	Optional<CreditCard> fireCreditCard(CreditCard creditCardNo);
+	Optional<CreditCard> addCreditCard(CreditCard creditCard);
+	Optional<CreditCard> removeCreditCard(CreditCard creditCardNo);
 	Optional<CreditCard> editCreditCard(CreditCard creditCard);
 	Optional<CreditCard> getInformationCreditCard(CreditCard creditCardNo);
 	

@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="libary.domain.annotations.ValueObject"/>
-    <fullyQualifiedTypeName name="com.sahabt.library.domain.annotations.Aggregate"/>
     <fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
@@ -30,8 +29,6 @@
     <fullyQualifiedTypeName name="com.sahabt.library.domain.user.User.Builder"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.borrow.Borrow"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.borrow.Borrow.Builder"/>
-    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.User"/>
-    <fullyQualifiedTypeName name="com.sahabt.library.domain.annotations.ValueObject"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.Admin"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.Email"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.EmailType"/>
@@ -39,4 +36,23 @@
     <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.Address"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.Phone"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.AddressType"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.booking.Booking"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.booking.BookId"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.booking.IdentityNo"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.borrow.IdentityNo"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.BookId"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.credicard.CreditCard"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.login.Login"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.login.IdentityNo"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.login.Password"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.User"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.payment.Payment"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.creditcard.CreditCard"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.borrow.Punishment"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.annotations.Aggregate"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.message.Message.Builder"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.message.Message"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.annotations.ValueObject"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.message.EmailType"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
 </qualifiedTypeNameHistroy>

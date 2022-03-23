@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="BorrowTest" project="library" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="library.BorrowTest" time="0.049" displayname="BorrowTest" uniqueid="[engine:junit-jupiter]/[class:library.BorrowTest]">
-    <testcase name="test" classname="library.BorrowTest" time="0.049" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:library.BorrowTest]/[method:test()]"/>
-  </testsuite>
-</testrun>
