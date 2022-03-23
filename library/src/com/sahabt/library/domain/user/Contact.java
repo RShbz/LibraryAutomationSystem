@@ -2,6 +2,8 @@ package com.sahabt.library.domain.user;
 
 import java.util.Objects;
 
+import com.sahabt.library.domain.annotations.ValueObject;
+@ValueObject
 public class Contact {
 	private Email  email;
 	private Phone  phone;

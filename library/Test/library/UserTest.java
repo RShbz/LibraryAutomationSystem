@@ -2,8 +2,6 @@ package library;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.Date;
-
 import org.junit.jupiter.api.Test;
 
 import com.sahabt.library.domain.user.Address;

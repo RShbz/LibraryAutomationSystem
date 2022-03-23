@@ -1,22 +1,17 @@
 package com.sahabt.library.domain.message;
 
-import java.util.Map;
 import java.util.Objects;
-import java.util.concurrent.ConcurrentHashMap;
 
 import com.sahabt.library.domain.annotations.ValueObject;
 
 @ValueObject
-public class Email {
+public final class Email {
 	private String email;
 	private EmailType emailType;
-    private static Map<String,Email> emailList = new ConcurrentHashMap<>();  
-    
+  
 	public static Email of(String email, EmailType emailType) {
 		
-		// Mail adresinin olup olmadýðý ile ilgili validation olmasý gerekiyor.
-		var newEmail = new Email(email, emailType);
-		return emailList.put(email,newEmail);
+		return  new Email(email,emailType);
 	}
 
 	private Email(String email, EmailType emailType) {

@@ -114,7 +114,7 @@ public class User {
 
 		public Builder contact(Email email, Phone phone, Address address) {
 			this.contact = Contact.of(email, phone, address);
-			return this;
+			return this; 
 		}
 
 		public Builder faculty(String facultyName, int foundationYear) {

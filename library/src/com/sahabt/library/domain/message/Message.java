@@ -46,11 +46,11 @@ public class Message {
 
 		public Builder identityNo(String identityNo) {
 			this.identityNo = IdentityNo.of(identityNo);
-			return this;
+			return this; 
 		}
 
 		public Builder email(String email, EmailType emailType) {
-			this.email = Email.of(email, emailType);
+			this.email = Email.of(email,emailType);
 			return this;
 		}
 
