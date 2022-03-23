@@ -2,7 +2,7 @@ package com.sahabt.library.domain.user;
 
 import com.sahabt.library.domain.annotations.Aggregate;
 
-@Aggregate(id = "identityNo")
+@Aggregate(id ="identityNo")
 public class User {
 	private IdentityNo identityNo;
 	private FullName fullName;
@@ -84,12 +84,12 @@ public class User {
 		private BirthDate birthDate;
 		private Photo photo;
 		private Status status; // Status include main role as teacher, student
-		private Contact contact;
+		private Contact contact; 
 		private Faculty faculty;
 
 		public Builder identityNo(String identityNo) {
 			this.identityNo = IdentityNo.of(identityNo);
-			return this;
+			return this; 
 		}
 
 		public Builder fullName(String firstName, String lastName) {

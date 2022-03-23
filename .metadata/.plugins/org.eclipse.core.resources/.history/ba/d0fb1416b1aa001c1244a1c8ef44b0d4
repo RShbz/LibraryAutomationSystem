@@ -1,0 +1,46 @@
+package com.sahabt.library.domain.message;
+
+import com.sahabt.library.domain.annotations.Aggregate;
+import com.sahabt.library.domain.user.IdentityNo;
+import com.sahabt.library.domain.user.User;
+import com.sahabt.library.domain.user.User.Builder;
+
+@Aggregate(id="")
+public class Message {
+	
+	private IdentityNo identityNo;
+	private Email email;
+	private MessageContent messageContent;
+	
+	
+	public MessageContent(Builder builder) {
+		this.identityNo=builder.
+	}
+	
+	public static Builder{
+		private IdentityNo identityNo;
+		private Email email;
+		private MessageContent messageContent;
+		
+		public Builder identityNo(String identityNo) {
+			this.identityNo = IdentityNo.of(identityNo);
+			return (this);
+		}
+		public Builder email(String email) {
+			this.email = Email.of(email);
+			return (this);
+		}
+		public Builder messageContent(String messageContent) {
+			this.messageContent = MessageContent.of(messageContent);
+			return this;
+		}
+		public Builder build() {
+			// validation
+			// business rule
+			// constraint
+			// invariance
+			return new Builder(this);
+		}
+	}
+	
+}

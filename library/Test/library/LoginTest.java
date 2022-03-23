@@ -11,8 +11,12 @@ public class LoginTest {
 	@Test
 	void test() {
 
-		var login = new Login.Builder().identityNo("111111").username("remzi3434").password("istanbul").build();
-		
+		var login = new Login.Builder()
+						.identityNo("111111")
+						.username("remzi3434")
+						.password("istanbul")
+						.build();
+		 
 		//System.out.println(jack.getBirthDate().getDay());
 
 		assertEquals("111111", login.getIdentityNo().getIdentityNo());

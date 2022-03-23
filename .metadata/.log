@@ -1208,3 +1208,45 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:14:09.159
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.cymLoIOO => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:32.172
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:32.172
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@48543db6[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:32.173
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:33.738
+!MESSAGE Boot LS startup time from start to initialized: 1565ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:33.817
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.uTHbPbLGisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:33.818
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:33.818
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:33.818
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:33.818
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:33.819
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.uTHbPbLG => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:33.819
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:33.820
+!MESSAGE buffering callback sts4.classpath.uTHbPbLG library false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:33.820
+!MESSAGE executing callback sts4.classpath.uTHbPbLG 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-23 16:15:34.074
+!MESSAGE executing callback sts4.classpath.uTHbPbLG SUCCESS [done]

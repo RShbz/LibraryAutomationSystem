@@ -32,13 +32,11 @@ public class PaymentTest {
 							.fullName("remzi","baba")
 							.creditCard(remziCard)
 							.processType("PUNISHMENT")
-							.punishment(100)
 							.build();
 		
 		assertEquals("01111", payment.getIdentityNo().getIdentityNo());
 		assertEquals("remzi", payment.getFullName().getFirstName());
 		assertEquals("baba", payment.getFullName().getLastName());
-		assertEquals(100, payment.getPunishment().getPunishmentAmount());
 		assertEquals("15254685632", payment.getCreditCard().getCreditCardNo().getCrediCardNo());
 		assertEquals(05, payment.getCreditCard().getExpirationDate().getMount());
 		assertEquals(1996, payment.getCreditCard().getExpirationDate().getYear());
