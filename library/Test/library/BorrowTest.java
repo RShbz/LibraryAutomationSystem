@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import com.sahabt.library.domain.borrow.Borrow;
 import com.sahabt.library.domain.catalog.Catalog;
-import com.sahabt.library.domain.credicard.CrediCard;
+import com.sahabt.library.domain.credicard.CreditCard;
 import com.sahabt.library.domain.credicard.ExpirationDate;
 
 public class BorrowTest {

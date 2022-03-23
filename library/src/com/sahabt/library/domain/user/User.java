@@ -1,6 +1,5 @@
 package com.sahabt.library.domain.user;
 
-
 import com.sahabt.library.domain.annotations.Aggregate;
 
 @Aggregate(id = "identityNo")
@@ -20,7 +19,7 @@ public class User {
 		this.photo = builder.photo;
 		this.status = builder.status;
 		this.contact = builder.contact;
-		this.faculty=builder.faculty;
+		this.faculty = builder.faculty;
 	}
 
 	public IdentityNo getIdentityNo() {

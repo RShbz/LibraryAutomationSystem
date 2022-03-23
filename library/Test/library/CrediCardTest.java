@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 import com.sahabt.library.domain.catalog.Catalog;
-import com.sahabt.library.domain.credicard.CrediCard;
+import com.sahabt.library.domain.credicard.CreditCard;
 import com.sahabt.library.domain.credicard.ExpirationDate;
 
 public class CrediCardTest {
@@ -13,7 +13,7 @@ public class CrediCardTest {
 	@Test
 	void test() {
 		
-	var remzi = new CrediCard.Builder()
+	var remzi = new CreditCard.Builder()
 			.identityNo("01111")
 			.crediCardNo("15254685632")
 			.expirationDate(05, 1996)
