@@ -11,10 +11,9 @@ public class Contact {
 		return new Contact(email,phone,address);
 	}
 	private Contact(Email email, Phone phone, Address address) {
-		super();
 		this.email = email;
 		this.phone = phone;
-		this.address = address;
+		this.address = address; 
 	}
 	public Email getEmail() {
 		return email;

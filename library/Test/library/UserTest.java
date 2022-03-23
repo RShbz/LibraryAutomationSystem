@@ -32,6 +32,7 @@ public class UserTest {
 				  .contact(email, 
 						  phone, 
 						  address)
+				  .faculty("engineering faculty", 1973)
 				  .build();
 		//System.out.println(jack.getBirthDate().getDay());
 		
@@ -43,10 +44,10 @@ public class UserTest {
 		assertEquals(1996, jack.getBirthDate().getYear());
 		assertEquals(null, jack.getPhoto().getValue());
 		assertEquals(email, jack.getContact().getEmail());
-		assertEquals(phone, jack.getContact().getPhone());
+		assertEquals(phone, jack.getContact().getPhone()); 
 		assertEquals(address, jack.getContact().getAddress());
-		
-		
+		assertEquals("engineering faculty", jack.getFaculty().getFacultyName());
+		assertEquals(1973, jack.getFaculty().getFoundationYear());
 	}
 
 }

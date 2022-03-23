@@ -16,10 +16,8 @@
     <fullyQualifiedTypeName name="lorem.annot.Aggregate"/>
     <fullyQualifiedTypeName name="lorem.domain.Lorem.Builder"/>
     <fullyQualifiedTypeName name="lorem.domain.Lorem"/>
-    <fullyQualifiedTypeName name="com.sahabt.library.domain.annotations.ValueObject"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Contact"/>
-    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.User"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Email"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Phone"/>
@@ -32,4 +30,13 @@
     <fullyQualifiedTypeName name="com.sahabt.library.domain.user.User.Builder"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.borrow.Borrow"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.borrow.Borrow.Builder"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.User"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.annotations.ValueObject"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.Admin"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.Email"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.EmailType"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.PhoneType"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.Address"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.Phone"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.admin.AddressType"/>
 </qualifiedTypeNameHistroy>

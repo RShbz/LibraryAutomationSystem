@@ -1,0 +1,8 @@
+package com.sahabt.library.domain.valueobject;
+
+public class Snippet {
+	public static void main(String[] args) {
+		"ADMIN"
+	}
+}
+

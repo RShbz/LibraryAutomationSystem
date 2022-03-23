@@ -1,27 +1,28 @@
 package com.sahabt.library.domain.user;
 
-import java.util.Date;
 
 import com.sahabt.library.domain.annotations.Aggregate;
-import com.sahabt.library.domain.catalog.Catalog;
-@Aggregate(id="identityNo")
+
+@Aggregate(id = "identityNo")
 public class User {
 	private IdentityNo identityNo;
-	private FullName   fullName;
-	private BirthDate  birthDate;
-	private Photo      photo;
-	private Status     status;  // Status include main role as teacher, student
-	private Contact    contact; 
+	private FullName fullName;
+	private BirthDate birthDate;
+	private Photo photo;
+	private Status status; // Status include main role as teacher, student
+	private Contact contact;
+	private Faculty faculty;
 
 	public User(Builder builder) {
-		this.identityNo= builder.identityNo;
+		this.identityNo = builder.identityNo;
 		this.fullName = builder.fullName;
 		this.birthDate = builder.birthDate;
 		this.photo = builder.photo;
 		this.status = builder.status;
 		this.contact = builder.contact;
+		this.faculty=builder.faculty;
 	}
-	
+
 	public IdentityNo getIdentityNo() {
 		return identityNo;
 	}
@@ -38,6 +39,13 @@ public class User {
 		this.fullName = fullName;
 	}
 
+	public Faculty getFaculty() {
+		return faculty;
+	}
+
+	public void setFaculty(Faculty faculty) {
+		this.faculty = faculty;
+	}
 
 	public BirthDate getBirthDate() {
 		return birthDate;
@@ -71,43 +79,50 @@ public class User {
 		this.contact = contact;
 	}
 
-	public static class Builder{
+	public static class Builder {
 		private IdentityNo identityNo;
-		private FullName   fullName;
-		private BirthDate  birthDate;
-		private Photo      photo;
-		private Status     status;  // Status include main role as teacher, student
-		private Contact    contact;
-		
-		
+		private FullName fullName;
+		private BirthDate birthDate;
+		private Photo photo;
+		private Status status; // Status include main role as teacher, student
+		private Contact contact;
+		private Faculty faculty;
+
 		public Builder identityNo(String identityNo) {
-			this.identityNo=IdentityNo.of(identityNo);
+			this.identityNo = IdentityNo.of(identityNo);
 			return this;
 		}
-		
-		public Builder fullName(String firstName,String lastName) {
-			this.fullName = FullName.of(firstName,lastName);
+
+		public Builder fullName(String firstName, String lastName) {
+			this.fullName = FullName.of(firstName, lastName);
 			return this;
 		}
-		public Builder birthDate(int day,
-								int mount,
-								int year) {
-			this.birthDate = BirthDate.of(day,mount,year);
+
+		public Builder birthDate(int day, int mount, int year) {
+			this.birthDate = BirthDate.of(day, mount, year);
 			return this;
 		}
+
 		public Builder photo(byte[] value) {
 			this.photo = Photo.of(value);
 			return this;
 		}
+
 		public Builder status(String value) {
 			this.status = Status.valueOf(value);
 			return this;
-		} 
-		public Builder contact(Email  email,Phone  phone,Address address) {
-			this.contact = Contact.of(email,phone,address);
+		}
+
+		public Builder contact(Email email, Phone phone, Address address) {
+			this.contact = Contact.of(email, phone, address);
 			return this;
 		}
-		
+
+		public Builder faculty(String facultyName, int foundationYear) {
+			this.faculty = Faculty.of(facultyName, foundationYear);
+			return this;
+		}
+
 		public User build() {
 			// validation
 			// business rule
@@ -116,6 +131,5 @@ public class User {
 			return new User(this);
 		}
 	}
-			
 
 }
