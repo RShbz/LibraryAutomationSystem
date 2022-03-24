@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="libary.domain.annotations.ValueObject"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.Base64"/>
-    <fullyQualifiedTypeName name="java.util.Objects"/>
-    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.ISBN"/>
-    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.IdentityNo"/>
-    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.Catalog.Builder"/>
-    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.Catalog"/>
-    <fullyQualifiedTypeName name="lorem.annot.ValueObject"/>
-    <fullyQualifiedTypeName name="lorem.annot.Aggregate"/>
-    <fullyQualifiedTypeName name="lorem.domain.Lorem.Builder"/>
-    <fullyQualifiedTypeName name="lorem.domain.Lorem"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Contact"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Email"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.user.Phone"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.user.PhoneType"/>
@@ -55,4 +37,27 @@
     <fullyQualifiedTypeName name="com.sahabt.library.domain.annotations.ValueObject"/>
     <fullyQualifiedTypeName name="com.sahabt.library.domain.message.EmailType"/>
     <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.UserApplication"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.BorrowApplication"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.BookingApplication"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.CatalogApplication"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.LoginApplication"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.PaymentApplication"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.CreditCardApplication"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.ISBN"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.Author"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.Title"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.PublishDate"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.Language"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.Type"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.Topic"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.domain.catalog.UseTarget"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.bussiness.event.booking.BookingEvent"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.bussiness.event.borrow.BorrowEvent"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.bussiness.event.catalog.CatalogEvent"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.bussiness.event.creditcard.CreditCardEvent"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.bussiness.event.payment.PaymentEvent"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.bussiness.event.message.MessageEvent"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.bussiness.event.user.UserEvent"/>
+    <fullyQualifiedTypeName name="com.sahabt.library.applications.bussiness.event.login.LoginEvent"/>
 </qualifiedTypeNameHistroy>
