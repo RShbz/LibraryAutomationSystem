@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy package &apos;com.example.ddd.annotations&apos; to &apos;library/src&apos;&#x0D;&#x0A;- Original project: &apos;library-domain&apos;&#x0D;&#x0A;- Destination element: &apos;library/src&apos;&#x0D;&#x0A;- Original element: &apos;library-domain/src/com.example.ddd.annotations&apos;" description="Copy package" destination="=library/src" element1="/src&lt;com.example.ddd.annotations" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1647866693127" version="1.0"/>
-</session>

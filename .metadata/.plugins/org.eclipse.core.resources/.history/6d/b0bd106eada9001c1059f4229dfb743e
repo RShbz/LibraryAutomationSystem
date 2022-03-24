@@ -1,5 +1,0 @@
-package com.sahabt.library.domain.catalog;
-
-public enum Type {
-
-}
